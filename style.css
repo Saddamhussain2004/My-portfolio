@@ -1,0 +1,470 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#ffffff;
+}
+
+/* Navbar */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111827;
+    padding:18px 8%;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    color:#38bdf8;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Home Section */
+
+#home{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+#home h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+#home h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+#home p{
+    max-width:700px;
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:30px;
+}
+
+#home button{
+    padding:14px 35px;
+    border:none;
+    border-radius:40px;
+    background:#38bdf8;
+    color:#000;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#home button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* Common Section */
+
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+#about{
+    background:#111827;
+    text-align:center;
+}
+
+#about p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:32px;
+    color:#d1d5db;
+}
+
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+#skills{
+    background:#0f172a;
+}
+
+#skills ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    list-style:none;
+    margin-top:40px;
+}
+
+#skills li{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+    cursor:pointer;
+    border:2px solid transparent;
+}
+
+#skills li:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    background:#334155;
+}
+
+/* ===========================
+   PROJECT SECTION
+=========================== */
+
+#projects{
+    background:#111827;
+}
+
+#projects div{
+    background:#1e293b;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+#projects div:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(56,189,248,.25);
+}
+
+#projects h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+#projects p{
+    color:#d1d5db;
+    line-height:28px;
+}
+/* ===========================
+   EDUCATION SECTION
+=========================== */
+
+#education{
+    background:#0f172a;
+    text-align:center;
+}
+
+#education p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    line-height:32px;
+    color:#d1d5db;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+}
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+#contact{
+    background:#111827;
+    text-align:center;
+}
+
+#contact input,
+#contact textarea{
+    width:100%;
+    max-width:600px;
+    padding:15px;
+    margin:12px 0;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#1e293b;
+    color:white;
+    font-size:16px;
+}
+
+#contact textarea{
+    height:150px;
+    resize:none;
+}
+
+#contact input:focus,
+#contact textarea:focus{
+    border:2px solid #38bdf8;
+}
+
+#contact button{
+    padding:15px 40px;
+    background:#38bdf8;
+    color:#000;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#contact button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#020617;
+    color:#94a3b8;
+    text-align:center;
+    padding:25px;
+    font-size:15px;
+    border-top:1px solid #1e293b;
+}
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width:768px){
+
+    header{
+        padding:15px 5%;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:20px;
+        width:100%;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:12px 0;
+    }
+
+    #home h1{
+        font-size:38px;
+    }
+
+    #home h2{
+        font-size:24px;
+    }
+
+    #home p{
+        font-size:16px;
+        line-height:28px;
+    }
+
+    section{
+        padding:80px 6%;
+    }
+
+    section h2{
+        font-size:32px;
+    }
+
+    #skills ul{
+        grid-template-columns:1fr;
+    }
+
+    #contact input,
+    #contact textarea{
+        width:100%;
+    }
+}
+
+/* ===========================
+   HOVER ANIMATION
+=========================== */
+
+button,
+#skills li,
+#projects div{
+    transition:0.3s ease;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+#projects div:hover{
+    transform:translateY(-8px);
+}
+
+#skills li:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0ea5e9;
+}
+/* Active Menu */
+
+nav ul li a.active{
+    color:#38bdf8;
+    font-weight:bold;
+}
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+    box-shadow:0 0 25px #38bdf8;
+    margin-bottom:20px;
+}
+#typing{
+    color:#38bdf8;
+    font-weight:bold;
+}
+#theme-btn{
+    background:#38bdf8;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.light-mode{
+    background:white;
+    color:black;
+}
+
+.light-mode header{
+    background:#f5f5f5;
+}
+
+.light-mode section{
+    background:white;
+    color:black;
+}
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons a{
+    color:#38bdf8;
+    font-size:30px;
+    margin:0 12px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:white;
+    transform:scale(1.2);
+}
+.contact-info{
+    margin-top:40px;
+    text-align:center;
+    color:white;
+}
+
+.contact-info h3{
+    color:#00bfff;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+.contact-info a{
+    color:#00bfff;
+    text-decoration:none;
+}
+
+.contact-info a:hover{
+    text-decoration:underline;
+}
+#result{
+    margin-top:15px;
+    text-align:center;
+    font-weight:bold;
+}
+
+#send-btn:disabled{
+    opacity:0.7;
+    cursor:not-allowed;
+}
