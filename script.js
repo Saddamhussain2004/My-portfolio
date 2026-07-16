@@ -136,3 +136,15 @@ form.addEventListener("submit", async function (e) {
     sendBtn.innerHTML = "Send";
     sendBtn.disabled = false;
 });
+const menuIcon = document.getElementById("menu-icon");
+const navMenu = document.getElementById("nav-menu");
+
+menuIcon.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll("#nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});
