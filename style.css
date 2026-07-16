@@ -505,17 +505,18 @@ nav ul li a.active{
     display:block;
     font-size: 28px;
     position: absolute;
-    margin-right: 15px;
-    top: 25px;
-    right: 25px;
-    z-index: 1001;
+    top: 18px;
+    right: 20px;
+    color: white;
+    z-index: 1002;
 
 }
  
 #theme-btn{
-    order:2;
-    margin-left:auto;
-    margin-right:18px;
+    position: absolute;
+    top: 18px;
+    right: 65px;
+    z-index: 1001;
 }
 
  #nav-menu{
