@@ -283,26 +283,27 @@ footer{
    RESPONSIVE DESIGN
 =========================== */
 
-@media (max-width:768px){
+nav{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    header{
-        padding:15px 5%;
-    }
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:10px;
+}
 
-    nav{
-        flex-direction:column;
-    }
+nav ul li{
+    margin:0;
+}
 
-    nav ul{
-        flex-direction:column;
-        margin-top:20px;
-        width:100%;
-        text-align:center;
-    }
-
-    nav ul li{
-        margin:12px 0;
-    }
+nav ul li a{
+    font-size:14px;
+}
 
     #home h1{
         font-size:38px;
