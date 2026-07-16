@@ -511,13 +511,7 @@ nav ul li a.active{
     z-index: 1002;
 
 }
- 
-#theme-btn{
-    position: absolute;
-    top: 18px;
-    right: 65px;
-    z-index: 1001;
-}
+
 
  #nav-menu{
     display:none;
