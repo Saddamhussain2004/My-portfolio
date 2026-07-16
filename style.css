@@ -497,6 +497,9 @@ nav ul li a.active{
         justify-content:space-between;
         align-items:center;
     }
+    .logo{
+    margin-right: auto;
+}
 
    #menu-icon{
     display:block;
@@ -504,8 +507,15 @@ nav ul li a.active{
     margin-left:15px;
     order:3;
 }
- .logo{
-    margin-right: auto;
+ 
+#theme-btn{
+    order:2;
+    margin-left:auto;
+    margin-right:50px;
+}
+#menu-icon{
+    order: 3;
+    margin-left: 15px;
 }
     #nav-menu{
     display:none;
@@ -527,9 +537,3 @@ nav ul li a.active{
     #nav-menu li{
         margin:15px 0;
     }
-
-   #theme-btn{
-    order:2;
-    margin-left:auto;
-    margin-right:50px;
-}
