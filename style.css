@@ -468,8 +468,8 @@ nav ul li a.active{
     cursor:not-allowed;
 }
 #menu-icon{
-    display:none;
-    font-size:28px;
+    display:block;
+    font-size:30px;
     color:#38bdf8;
     cursor:pointer;
 }
@@ -513,6 +513,6 @@ nav ul li a.active{
 
     #theme-btn{
         margin-left:auto;
-        margin-right:15px;
+        margin-right:12px;
     }
 }
