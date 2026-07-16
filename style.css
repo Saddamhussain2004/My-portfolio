@@ -291,10 +291,8 @@ nav{
 
 nav ul{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:10px;
-    margin-top:10px;
+    list-style:none;
+    gap:30px;
 }
 
 nav ul li{
@@ -477,6 +475,9 @@ nav ul li a.active{
 }
 
 @media(max-width:768px){
+    header{
+    position:relative;
+}
 
     nav{
         display:flex;
@@ -490,16 +491,21 @@ nav ul li a.active{
     }
 
     #nav-menu{
-        display:none;
-        width:100%;
-        flex-direction:column;
-        text-align:center;
-        margin-top:15px;
-    }
+    display:none;
+    position:absolute;
+    top:75px;
+    left:0;
+    width:100%;
+    background:#111827;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+}
 
-    #nav-menu.active{
-        display:flex;
-    }
+#nav-menu.active{
+    display:flex;
+}
+
 
     #nav-menu li{
         margin:15px 0;
