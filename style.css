@@ -29,8 +29,9 @@ header{
 
 nav{
     display:flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items:center;
+    width:100%;
 }
 
 .logo{
@@ -42,6 +43,7 @@ nav{
 nav ul{
     display:flex;
     list-style:none;
+    margin-left: auto;
 }
 
 nav ul li{
@@ -51,7 +53,8 @@ nav ul li{
 nav ul li a{
     text-decoration:none;
     color:white;
-    font-size:17px;
+    font-size:22px;
+    font-weight: 700;
     transition:.3s;
 }
 
@@ -72,19 +75,19 @@ nav ul li a:hover{
 }
 
 #home h1{
-    font-size:60px;
+    font-size:38px;
     margin-bottom:15px;
 }
 
 #home h2{
     color:#38bdf8;
     margin-bottom:20px;
-    font-size:32px;
+    font-size:24px;
 }
 
 #home p{
     max-width:700px;
-    font-size:18px;
+    font-size:16px;
     line-height:30px;
     margin-bottom:30px;
 }
@@ -108,12 +111,12 @@ nav ul li a:hover{
 /* Common Section */
 
 section{
-    padding:100px 10%;
+    padding:80px 10%;
 }
 
 section h2{
     text-align:center;
-    font-size:40px;
+    font-size:32px;
     margin-bottom:40px;
     color:#38bdf8;
 }
@@ -144,9 +147,10 @@ section h2{
 
 #skills ul{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
     list-style:none;
+    padding: 0;
     margin-top:40px;
 }
 
@@ -156,7 +160,7 @@ section h2{
     text-align:center;
     border-radius:12px;
     font-size:18px;
-    font-weight:600;
+    font-weight:bold;
     transition:0.3s;
     cursor:pointer;
     border:2px solid transparent;
@@ -300,7 +304,7 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size:14px;
+    font-size:22px;
 }
 
     #home h1{
@@ -325,7 +329,7 @@ nav ul li a{
     }
 
     #skills ul{
-        grid-template-columns:1fr;
+        grid-template-columns:repeat(4, 1fr);
     }
 
     #contact input,
@@ -399,10 +403,18 @@ nav ul li a.active{
     background:#38bdf8;
     color:white;
     border:none;
+    width: 34px;
+    height: 34px;
     padding:10px 15px;
     border-radius:8px;
     cursor:pointer;
     font-size:18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30px;
+    top: 18px;
 }
 
 .light-mode{
@@ -468,7 +480,7 @@ nav ul li a.active{
     cursor:not-allowed;
 }
 #menu-icon{
-    display:block;
+    display:none;
     font-size:30px;
     color:#38bdf8;
     cursor:pointer;
@@ -477,19 +489,23 @@ nav ul li a.active{
 @media(max-width:768px){
     header{
     position:relative;
+
 }
 
     nav{
         display:flex;
         justify-content:space-between;
         align-items:center;
-        flex-wrap:wrap;
     }
 
-    #menu-icon{
-        display:block;
-    }
-
+   #menu-icon{
+    display:block;
+    margin-left:15px;
+    order:3;
+}
+ .logo{
+    margin-right: auto;
+}
     #nav-menu{
     display:none;
     position:absolute;
@@ -511,8 +527,9 @@ nav ul li a.active{
         margin:15px 0;
     }
 
-    #theme-btn{
-        margin-left:auto;
-        margin-right:12px;
-    }
+   #theme-btn{
+    order:2;
+    margin-left:auto;
+    margin-right:15px;
+}
 }
